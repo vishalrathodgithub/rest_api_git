@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    {% if data %}
+    <table align='center'>
+    <thead>
+      <th>EMP_ID</th>
+      <th>EMP_NAME</th>
+      <th>EMP_CITY</th>
+    </thead>
+      {% for i in data %}
+      <tr>
+        <td>{{i.eid}}</td>
+        <td>{{i.ename}}</td>
+        <td>{{i.ecity}}</td>
+      </tr>
+
+      {% endfor %}
+    </table>
+    {% endif %}
+  </body>
+</html>
